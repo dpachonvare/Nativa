@@ -13,10 +13,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "Tienda", href: "#categorias" },
-    { label: "Sobre Nativa", href: "#manifiesto" },
-    { label: "Journal", href: "#journal" },
-    { label: "Encuentra tu tono", href: "#quiz" },
+    { label: "Servicios", href: "#servicios" },
+    { label: "Experiencias", href: "#experiencias" },
+    { label: "Alejandra", href: "#alejandra" },
+    { label: "Portafolio", href: "#portafolio" },
+    { label: "Contacto", href: "#contacto" },
   ];
 
   return (
@@ -49,57 +50,19 @@ export default function Navbar() {
               href={link.href}
               className={`text-sm font-medium transition-colors duration-300 hover:opacity-70 ${
                 scrolled ? "text-nativa-cacao" : "text-nativa-lino"
-              } ${link.label === "Encuentra tu tono" ? "rounded-full border border-nativa-oro/60 px-4 py-1.5 hover:bg-nativa-oro/10" : ""}`}
+              }`}
             >
               {link.label}
             </a>
           ))}
 
-          {/* Icons */}
-          <div className="flex items-center gap-4">
-            <button
-              aria-label="Buscar productos"
-              className={`transition-colors duration-300 ${
-                scrolled ? "text-nativa-cacao" : "text-nativa-lino"
-              }`}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                />
-              </svg>
-            </button>
-            <button
-              aria-label="Ver carrito de compras"
-              className={`transition-colors duration-300 ${
-                scrolled ? "text-nativa-cacao" : "text-nativa-lino"
-              }`}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-                />
-              </svg>
-            </button>
-          </div>
+          {/* CTA */}
+          <a
+            href="#contacto"
+            className="rounded-full bg-nativa-terracota px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:scale-[1.03] hover:bg-nativa-terracota/90 hover:shadow-lg"
+          >
+            Agenda tu cita
+          </a>
         </div>
 
         {/* Mobile hamburger */}

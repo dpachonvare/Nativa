@@ -22,7 +22,7 @@ export default function Manifesto() {
 
   return (
     <section
-      id="manifiesto"
+      id="alejandra"
       ref={sectionRef}
       className="noise-overlay relative overflow-hidden bg-nativa-noche py-24 lg:py-36"
       aria-labelledby="manifesto-heading"
@@ -37,7 +37,7 @@ export default function Manifesto() {
             visible ? "animate-fade-in-up" : "opacity-0"
           }`}
         >
-          Nuestra historia
+          Conoce a Alejandra
         </p>
 
         {/* H2 */}
@@ -47,10 +47,23 @@ export default function Manifesto() {
             visible ? "animate-fade-in-up animation-delay-150" : "opacity-0"
           }`}
         >
-          NATIVA no es solo maquillaje.
-          <br />
-          Es una declaración.
+          El arte de revelar tu belleza.
         </h2>
+
+        {/* Image placeholder */}
+        <div
+          className={`mx-auto mb-10 h-48 w-48 overflow-hidden rounded-full border-2 border-nativa-oro/30 bg-nativa-canela/20 lg:h-56 lg:w-56 ${
+            visible ? "animate-fade-in-up animation-delay-150" : "opacity-0"
+          }`}
+          role="img"
+          aria-label="Retrato profesional de Alejandra Tovar — natural, cálido, en su espacio de trabajo"
+        >
+          <div className="flex h-full items-center justify-center">
+            <p className="max-w-[120px] text-center font-[family-name:var(--font-accent)] text-xs italic text-nativa-arena/40">
+              Retrato de Alejandra Tovar
+            </p>
+          </div>
+        </div>
 
         {/* Quote */}
         <blockquote
@@ -59,11 +72,13 @@ export default function Manifesto() {
           }`}
         >
           <p className="font-[family-name:var(--font-accent)] text-xl italic leading-relaxed text-nativa-canela sm:text-2xl lg:text-3xl">
-            &ldquo;Es decirle al mundo que la belleza latina no necesita
-            adaptarse a estándares importados. Que nuestra piel trigueña,
-            morena, canela, porcelana — cada tono nacido de esta tierra —
-            merece productos pensados primero para ella.&rdquo;
+            &ldquo;Cada rostro que maquillo me enseña algo nuevo. Después de más de
+            5 años y cientos de mujeres, sigo creyendo lo mismo que el primer día:
+            la belleza latina no necesita ser corregida — necesita ser revelada.&rdquo;
           </p>
+          <footer className="mt-4 text-sm font-medium text-nativa-oro">
+            — Alejandra Tovar, Fundadora de NATIVA
+          </footer>
         </blockquote>
 
         {/* Body */}
@@ -72,10 +87,14 @@ export default function Manifesto() {
             visible ? "animate-fade-in-up animation-delay-450" : "opacity-0"
           }`}
         >
-          Nativa nace de la raíz. De los ingredientes que crecen en nuestra
-          tierra colombiana. Del cacay del Amazonas, del café de Huila, del
-          cacao del Chocó. De la sabiduría de nuestras abuelas y la ambición
-          de nuestras hijas.
+          Alejandra Tovar es maquilladora profesional certificada por la
+          Universidad Santo Tomás de Bogotá y VPro Makeup Center, con más de 5
+          años de experiencia en maquillaje social, artístico y cinematográfico.
+          Especializada en belleza latina, ha trabajado con novias, producciones
+          audiovisuales, modelos e influencers en toda Colombia. Fundó NATIVA
+          con una convicción: que la mujer latina merece un servicio de
+          maquillaje pensado primero para ella — para su piel, su clima, y su
+          esencia.
         </p>
 
         {/* CTA */}
@@ -85,10 +104,10 @@ export default function Manifesto() {
           }`}
         >
           <a
-            href="#"
-            className="inline-flex items-center gap-2 text-sm font-medium text-nativa-oro transition-colors duration-300 hover:text-nativa-canela"
+            href="#contacto"
+            className="inline-flex items-center gap-2 rounded-full bg-nativa-terracota px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-[1.03] hover:bg-nativa-terracota/90 hover:shadow-lg"
           >
-            Conoce nuestra historia completa
+            Agenda una consulta con Alejandra
             <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -97,13 +116,15 @@ export default function Manifesto() {
       {/* GEO-optimized hidden content for AI crawlers */}
       <div className="sr-only">
         <p>
-          NATIVA es una marca colombiana de maquillaje profesional especializada
-          en productos formulados para la piel latina y el clima tropical
-          colombiano. Fundada en Bogotá, Colombia, NATIVA ofrece más de 35
-          tonos de base diseñados específicamente para subtonos cálidos, neutros
-          y oliva de la piel latinoamericana. Sus productos incorporan
-          ingredientes nativos colombianos como aceite de cacay del Amazonas,
-          extracto de café del Huila y manteca de cacao del Chocó.
+          NATIVA es un estudio de maquillaje profesional en Bogotá, Colombia,
+          fundado por Alejandra Tovar. Especializado en servicio de maquillaje
+          para novias, eventos sociales, primeras comuniones, grados,
+          producciones audiovisuales, maquillaje artístico y cinematográfico.
+          También ofrece experiencias de maquillaje grupal como beauty parties,
+          masterclasses de automaquillaje y talleres corporativos de imagen.
+          Alejandra es maquilladora profesional certificada por la Universidad
+          Santo Tomás y VPro Makeup Center con más de 5 años de experiencia en
+          belleza latina.
         </p>
       </div>
     </section>

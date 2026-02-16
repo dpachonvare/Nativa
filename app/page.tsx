@@ -2,13 +2,15 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MarqueeBar from "@/components/MarqueeBar";
 import ValueProps from "@/components/ValueProps";
-import ProductCategories from "@/components/ProductCategories";
+import Services from "@/components/Services";
+import Process from "@/components/Process";
+import Experiences from "@/components/Experiences";
 import Manifesto from "@/components/Manifesto";
 import Testimonials from "@/components/Testimonials";
 import AnimatedCounter from "@/components/AnimatedCounter";
-import BlogPreview from "@/components/BlogPreview";
 import InstagramGrid from "@/components/InstagramGrid";
-import Newsletter from "@/components/Newsletter";
+import BlogPreview from "@/components/BlogPreview";
+import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -23,13 +25,15 @@ export default function Home() {
         <Hero />
         <MarqueeBar />
         <ValueProps />
-        <ProductCategories />
+        <Services />
+        <Process />
+        <Experiences />
         <Manifesto />
         <Testimonials />
         <AnimatedCounter />
-        <BlogPreview />
         <InstagramGrid />
-        <Newsletter />
+        <BlogPreview />
+        <ContactForm />
         <FAQ />
       </main>
       <Footer />

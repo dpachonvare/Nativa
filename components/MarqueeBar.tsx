@@ -1,11 +1,14 @@
 export default function MarqueeBar() {
   const items = [
+    "Maquillaje profesional certificado",
+    "+5 años de experiencia",
+    "Especialistas en belleza latina",
+    "Novias",
+    "Eventos",
+    "Producciones",
+    "Experiencias grupales",
+    "A domicilio en toda Colombia",
     "Cruelty-free",
-    "Hecho en Colombia",
-    "Formulado para clima tropical",
-    "+35 tonos para piel latina",
-    "Envío gratis +$120.000",
-    "Ingredientes nativos colombianos",
   ];
 
   const separator = (
@@ -27,7 +30,7 @@ export default function MarqueeBar() {
   return (
     <div
       className="overflow-hidden border-y border-nativa-canela/15 bg-nativa-arena py-3"
-      aria-label="Beneficios de NATIVA"
+      aria-label="Beneficios del servicio NATIVA"
       role="marquee"
     >
       <div className="animate-marquee flex w-max">

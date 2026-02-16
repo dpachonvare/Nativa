@@ -4,34 +4,39 @@ import { useEffect, useRef, useState } from "react";
 
 const faqs = [
   {
-    question: "¿NATIVA tiene tonos para piel morena y trigueña?",
+    question: "¿Cuánto cuesta el servicio de maquillaje para novias?",
     answer:
-      "Sí. NATIVA fue creada específicamente para la diversidad de tonos de piel latinoamericana. Nuestra línea de bases incluye más de 35 tonos con subtonos cálidos, neutros y oliva, diseñados desde cero para pieles trigueñas, morenas, canela y porcelana latinas. No adaptamos rangos internacionales — creamos los nuestros.",
+      "El paquete de novia NATIVA incluye asesoría personalizada, prueba de maquillaje y servicio el día de la boda con productos profesionales de alta duración. El precio varía según la complejidad del look, servicios adicionales (como maquillaje para acompañantes) y la ubicación del evento. Agenda una consulta gratuita y te enviaremos una cotización personalizada en menos de 24 horas.",
   },
   {
-    question: "¿El maquillaje NATIVA resiste el clima tropical colombiano?",
+    question: "¿Ofrecen servicio a domicilio?",
     answer:
-      "Absolutamente. Todas nuestras fórmulas son probadas en condiciones de humedad y calor extremo en ciudades como Barranquilla, Cartagena y Cali. Nuestras bases y labiales tienen tecnología de larga duración que resiste hasta 12 horas sin transferencia ni oxidación, incluso en temperaturas superiores a 35°C.",
+      "Sí. Todos nuestros servicios son a domicilio dentro de Bogotá. También nos desplazamos a otras ciudades de Colombia para bodas, eventos y producciones. El servicio a domicilio está incluido dentro de Bogotá; para otras ubicaciones, cotizamos el desplazamiento según la distancia.",
   },
   {
-    question: "¿Los productos NATIVA son cruelty-free?",
+    question: "¿Qué incluye la prueba de maquillaje para novias?",
     answer:
-      "Sí. NATIVA es 100% libre de crueldad animal. No testamos ni permitimos que terceros testen nuestros productos en animales. Además, trabajamos con ingredientes de origen vegetal y nativos colombianos certificados.",
+      "La prueba de novia es una sesión de 2-3 horas donde definimos juntas el look final para tu boda. Incluye diagnóstico de piel, análisis de colorimetría, prueba del maquillaje completo coordinado con tu vestido y accesorios, y la creación de una ficha técnica que garantiza que el resultado del día de tu boda sea exactamente lo que elegimos. La prueba se programa mínimo 3-4 semanas antes de la boda.",
   },
   {
-    question: "¿NATIVA envía a toda Colombia?",
+    question: "¿Quién es Alejandra Tovar?",
     answer:
-      "Sí. Realizamos envíos a todas las ciudades y municipios de Colombia. Envío gratis en compras superiores a $120.000 COP. Tiempo de entrega: 1-3 días hábiles en ciudades principales, 3-5 días en el resto del país.",
+      "Alejandra Tovar es la fundadora y maquilladora principal de NATIVA. Es profesional certificada por la Universidad Santo Tomás de Bogotá y VPro Makeup Center, con más de 5 años de experiencia en maquillaje social, artístico y cinematográfico. Se especializa en belleza latina y ha trabajado con novias, producciones audiovisuales, modelos e influencers en toda Colombia.",
   },
   {
-    question: "¿Qué ingredientes nativos colombianos usa NATIVA?",
+    question: "¿Qué es una Nativa Party?",
     answer:
-      "Nuestras fórmulas incorporan aceite de cacay del Amazonas colombiano (rico en retinol natural), extracto de café del Huila (antioxidante), manteca de cacao del Chocó (hidratación profunda), y otros ingredientes de la biodiversidad colombiana. Cada ingrediente es seleccionado por sus propiedades comprobadas para el cuidado de la piel latina.",
+      "Es una experiencia de maquillaje grupal privada ideal para despedidas de soltera, cumpleaños o reuniones de amigas. Alejandra guía a tu grupo paso a paso en una clase de maquillaje divertida y práctica. Incluye todos los productos profesionales, espumante, snacks, fotos del evento y tips personalizados para cada asistente. Grupos de 4 a 12 personas, duración 2.5 a 3 horas.",
   },
   {
-    question: "¿Cómo encuentro mi tono exacto de base NATIVA?",
+    question: "¿Trabajan con producciones audiovisuales y moda?",
     answer:
-      "Ofrecemos un quiz interactivo de tonos en nuestra web que analiza tu subtono y nivel de profundidad. También puedes visitarnos en nuestras tiendas aliadas en Bogotá, Medellín y Cali para una colorimetría personalizada gratuita.",
+      "Sí. NATIVA ofrece servicio de maquillaje artístico y cinematográfico para producciones de cine, televisión, sesiones fotográficas editoriales, campañas publicitarias y pasarelas. Alejandra tiene experiencia trabajando con actores, actrices, modelos e influencers, con técnicas especializadas para cámara y distintas condiciones de iluminación.",
+  },
+  {
+    question: "¿Con cuánta anticipación debo reservar?",
+    answer:
+      "Para novias, recomendamos reservar con mínimo 2-3 meses de anticipación para garantizar disponibilidad. Para eventos sociales, 3-4 semanas es ideal. Para Nativa Parties y Masterclasses, 2 semanas de anticipación. Para producciones audiovisuales, el tiempo depende del alcance del proyecto — contáctanos para coordinar.",
   },
 ];
 
@@ -132,7 +137,7 @@ export default function FAQ() {
             visible ? "animate-fade-in-up animation-delay-150" : "opacity-0"
           }`}
         >
-          Todo lo que necesitas saber sobre NATIVA
+          Todo lo que necesitas saber sobre nuestros servicios
         </p>
 
         <div

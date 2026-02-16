@@ -10,10 +10,10 @@ interface CounterItem {
 }
 
 const counters: CounterItem[] = [
-  { value: 10000, prefix: "+", suffix: "", label: "mujeres Nativas" },
-  { value: 35, prefix: "+", suffix: "", label: "tonos de base" },
-  { value: 12, suffix: "h", label: "de duración probada" },
-  { value: 4.8, suffix: "", label: "rating promedio" },
+  { value: 500, prefix: "+", suffix: "", label: "novias felices" },
+  { value: 1200, prefix: "+", suffix: "", label: "eventos" },
+  { value: 5, prefix: "+", suffix: "", label: "años de experiencia" },
+  { value: 5.0, suffix: "", label: "en Google" },
 ];
 
 function useCounter(end: number, duration: number, start: boolean) {
@@ -71,7 +71,7 @@ function CounterDisplay({
         {item.prefix}
         {formatted}
         {item.suffix}
-        {item.label === "rating promedio" && (
+        {item.label === "en Google" && (
           <span className="ml-1 text-nativa-oro" aria-hidden="true">
             &#9733;
           </span>

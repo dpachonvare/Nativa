@@ -4,32 +4,32 @@ import { useEffect, useRef, useState } from "react";
 
 const posts = [
   {
-    description: "Selfie mujer morena con rubor Nativa",
+    description: "Novia colombiana maquillada por Alejandra Tovar — look natural y elegante",
     likes: "2.4k",
     color: "from-nativa-canela/40 to-nativa-terracota/20",
   },
   {
-    description: "Flat lay de productos sobre mesa de madera",
+    description: "Setup profesional de maquillaje NATIVA — productos y brochas",
     likes: "1.8k",
     color: "from-nativa-oro/20 to-nativa-canela/30",
   },
   {
-    description: "Tutorial step-by-step labial",
+    description: "Maquillaje de quinceañera — look juvenil y fresco",
     likes: "3.1k",
     color: "from-nativa-terracota/30 to-nativa-canela/15",
   },
   {
-    description: "Mujer profesional en oficina con look natural Nativa",
+    description: "Nativa Party — grupo de amigas en experiencia de maquillaje",
     likes: "1.5k",
     color: "from-nativa-canela/20 to-nativa-oro/15",
   },
   {
-    description: "Close-up de textura de producto",
+    description: "Maquillaje editorial — modelo con look artístico para producción",
     likes: "2.0k",
     color: "from-nativa-terra/20 to-nativa-canela/20",
   },
   {
-    description: "Behind-the-scenes de producción",
+    description: "Behind the scenes — Alejandra Tovar trabajando en set",
     likes: "1.2k",
     color: "from-nativa-selva/10 to-nativa-canela/20",
   },
@@ -55,26 +55,27 @@ export default function InstagramGrid() {
 
   return (
     <section
+      id="portafolio"
       ref={sectionRef}
       className="bg-nativa-arena py-20 lg:py-28"
-      aria-labelledby="instagram-heading"
+      aria-labelledby="portfolio-heading"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h2
-            id="instagram-heading"
+            id="portfolio-heading"
             className={`mb-3 font-[family-name:var(--font-display)] text-3xl text-nativa-cacao sm:text-4xl lg:text-5xl ${
               visible ? "animate-fade-in-up" : "opacity-0"
             }`}
           >
-            Comparte tu glow Nativo
+            Nuestro trabajo
           </h2>
           <p
             className={`text-nativa-piedra ${
               visible ? "animate-fade-in-up animation-delay-150" : "opacity-0"
             }`}
           >
-            Síguenos{" "}
+            Cada rostro, una historia. Síguenos{" "}
             <a
               href="https://instagram.com/nativamakeup"
               target="_blank"
@@ -82,10 +83,7 @@ export default function InstagramGrid() {
               className="font-semibold text-nativa-terra hover:underline"
             >
               @nativamakeup
-            </a>{" "}
-            · Usa{" "}
-            <span className="font-semibold text-nativa-terra">#SoyNativa</span>{" "}
-            para aparecer aquí
+            </a>
           </p>
         </div>
 
@@ -99,12 +97,11 @@ export default function InstagramGrid() {
               rel="noopener noreferrer"
               className={`group relative aspect-square overflow-hidden rounded-xl ${
                 visible
-                  ? `animate-fade-in-up ${
-                      i >= 2 ? `animation-delay-${Math.min(i, 3) * 150}` : ""
-                    }`
+                  ? `animate-fade-in-up`
                   : "opacity-0"
               }`}
-              aria-label={`Post de Instagram: ${post.description}`}
+              style={{ animationDelay: `${Math.min(i, 3) * 100}ms` }}
+              aria-label={`Portafolio: ${post.description}`}
             >
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${post.color} transition-transform duration-300 group-hover:scale-105`}

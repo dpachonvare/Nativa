@@ -4,29 +4,27 @@ import { useEffect, useRef, useState } from "react";
 
 const articles = [
   {
-    category: "Guía de tonos",
-    title: "Guía definitiva de maquillaje para piel trigueña colombiana",
+    category: "Novias",
+    title: "Guía completa de maquillaje de novia en Colombia: todo lo que debes saber",
     excerpt:
-      "Tu piel trigueña tiene subtonos únicos que las marcas internacionales ignoran. Aprende a identificar si eres cálida, neutra u oliva y descubre los productos exactos que resaltarán tu belleza natural.",
-    placeholder:
-      "Collage de 4 mujeres con diferentes tonos de piel trigueña",
+      "Desde cuándo agendar tu prueba hasta cómo elegir el look perfecto para tu tipo de piel y el clima de tu boda. Todo lo que una novia colombiana necesita saber sobre su maquillaje.",
+    placeholder: "Novia colombiana preparándose para su boda",
     color: "from-nativa-canela/30 to-nativa-oro/10",
   },
   {
     category: "Tutoriales",
-    title: "Maquillaje que sobrevive 12 horas en clima tropical",
+    title: "Cómo elegir a tu maquilladora profesional: 7 señales de que estás en buenas manos",
     excerpt:
-      "Probamos técnicas profesionales en Cartagena, Cali y Barranquilla. Estos son los 5 pasos que hacen que tu maquillaje resista humedad, calor y la vida real colombiana.",
-    placeholder: "Before/after de maquillaje tras día completo",
+      "No todas las maquilladoras son iguales. Aprende a identificar profesionalismo, técnica y experiencia real antes de confiar tu rostro en el día más importante.",
+    placeholder: "Maquilladora profesional trabajando con cliente",
     color: "from-nativa-terracota/20 to-nativa-canela/10",
   },
   {
-    category: "Ingredientes",
-    title:
-      "Cacay, café y cacao: los ingredientes nativos que transforman tu piel",
+    category: "Experiencias",
+    title: "Nativa Party: la nueva forma de celebrar con tus amigas",
     excerpt:
-      "Colombia tiene una biodiversidad cosmética inexplorada. Descubre cómo el aceite de cacay del Amazonas, el extracto de café del Huila y la manteca de cacao del Chocó trabajan en tu rutina de belleza.",
-    placeholder: "Flat lay de ingredientes naturales colombianos",
+      "Olvídate de los planes de siempre. Descubre cómo una experiencia de maquillaje grupal se convirtió en el plan favorito para despedidas de soltera, cumpleaños y reuniones de amigas en Bogotá.",
+    placeholder: "Grupo de amigas en una Nativa Party",
     color: "from-nativa-selva/15 to-nativa-arena/30",
   },
 ];
@@ -37,12 +35,12 @@ const articleSchema = articles.map((a) => ({
   headline: a.title,
   description: a.excerpt,
   author: {
-    "@type": "Organization",
-    name: "NATIVA Cosmetics",
+    "@type": "Person",
+    name: "Alejandra Tovar",
   },
   publisher: {
     "@type": "Organization",
-    name: "NATIVA Cosmetics",
+    name: "NATIVA Makeup Studio",
   },
 }));
 
@@ -94,7 +92,7 @@ export default function BlogPreview() {
               visible ? "animate-fade-in-up animation-delay-150" : "opacity-0"
             }`}
           >
-            Tutoriales, guías y secretos de belleza para la mujer latina
+            Guías, inspiración y consejos de belleza para tus momentos especiales
           </p>
         </div>
 

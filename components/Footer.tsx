@@ -4,35 +4,34 @@ import { useState } from "react";
 
 const columns = [
   {
-    title: "Tienda",
+    title: "Servicios",
     links: [
-      "Rostro",
-      "Ojos",
-      "Labios",
-      "Accesorios",
-      "Kits & Sets",
-      "Lo nuevo",
-      "Más vendidos",
+      { label: "Novias", href: "#servicios" },
+      { label: "Eventos sociales", href: "#servicios" },
+      { label: "Producciones & editorial", href: "#servicios" },
+      { label: "Imagen corporativa", href: "#servicios" },
+      { label: "Nativa Party", href: "#experiencias" },
+      { label: "Nativa Masterclass", href: "#experiencias" },
     ],
   },
   {
-    title: "Sobre Nativa",
+    title: "NATIVA",
     links: [
-      "Nuestra historia",
-      "Ingredientes",
-      "Sostenibilidad",
-      "Prensa",
-      "Trabaja con nosotros",
+      { label: "Sobre Alejandra", href: "#alejandra" },
+      { label: "Nuestro proceso", href: "#proceso" },
+      { label: "Portafolio", href: "#portafolio" },
+      { label: "Journal", href: "#journal" },
+      { label: "Trabaja con nosotros", href: "#" },
     ],
   },
   {
-    title: "Ayuda",
+    title: "Contacto",
     links: [
-      "Envíos y devoluciones",
-      "Encuentra tu tono",
-      "Preguntas frecuentes",
-      "Contacto",
-      "WhatsApp",
+      { label: "Agenda tu consulta", href: "#contacto" },
+      { label: "Preguntas frecuentes", href: "#faq" },
+      { label: "WhatsApp directo", href: "https://wa.me/57XXXXXXXXXX" },
+      { label: "Instagram", href: "https://instagram.com/nativamakeup" },
+      { label: "hola@nativamakeup.co", href: "mailto:hola@nativamakeup.co" },
     ],
   },
 ];
@@ -41,7 +40,7 @@ const socials = [
   { name: "Instagram", href: "https://instagram.com/nativamakeup" },
   { name: "TikTok", href: "https://tiktok.com/@nativamakeup" },
   { name: "YouTube", href: "#" },
-  { name: "Facebook", href: "#" },
+  { name: "WhatsApp", href: "https://wa.me/57XXXXXXXXXX" },
 ];
 
 function AccordionColumn({
@@ -49,13 +48,12 @@ function AccordionColumn({
   links,
 }: {
   title: string;
-  links: string[];
+  links: { label: string; href: string }[];
 }) {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="border-b border-nativa-canela/10 lg:border-0">
-      {/* Mobile: accordion trigger */}
       <button
         onClick={() => setOpen(!open)}
         className="flex w-full items-center justify-between py-4 text-left lg:cursor-default lg:py-0"
@@ -75,20 +73,19 @@ function AccordionColumn({
           </svg>
         </span>
       </button>
-
-      {/* Desktop: always visible / Mobile: collapsible */}
       <ul
         className={`space-y-2.5 overflow-hidden transition-all duration-300 lg:mt-4 lg:max-h-none lg:opacity-100 ${
           open ? "max-h-96 py-3 opacity-100" : "max-h-0 opacity-0 lg:max-h-none lg:opacity-100"
         }`}
       >
         {links.map((link) => (
-          <li key={link}>
+          <li key={link.label}>
             <a
-              href="#"
+              href={link.href}
               className="text-sm text-nativa-piedra transition-colors duration-200 hover:text-nativa-canela"
+              {...(link.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             >
-              {link}
+              {link.label}
             </a>
           </li>
         ))}
@@ -146,20 +143,14 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-6 py-6 lg:px-8">
           <div className="flex flex-col items-center gap-4 text-center text-xs text-nativa-piedra sm:flex-row sm:justify-between sm:text-left">
             <p>
-              &copy; 2026 Nativa Cosmetics S.A.S. · Registro INVIMA · Todos los
+              &copy; 2026 NATIVA Makeup Studio · Bogotá, Colombia · Todos los
               derechos reservados
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="#"
-                className="transition-colors hover:text-nativa-canela"
-              >
+              <a href="#" className="transition-colors hover:text-nativa-canela">
                 Política de privacidad
               </a>
-              <a
-                href="#"
-                className="transition-colors hover:text-nativa-canela"
-              >
+              <a href="#" className="transition-colors hover:text-nativa-canela">
                 Términos y condiciones
               </a>
             </div>

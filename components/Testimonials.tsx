@@ -5,30 +5,30 @@ import { useEffect, useRef, useState, useCallback } from "react";
 const testimonials = [
   {
     quote:
-      "Por primera vez no tuve que mezclar dos bases para encontrar mi tono. Nativa lo tenía exacto. Mi piel trigueña por fin tiene SU base.",
+      "Alejandra no solo me maquilló para mi boda — me hizo sentir tranquila en el momento más nervioso de mi vida. El maquillaje duró desde las 8am hasta las 3am. Ni una lágrima lo movió.",
     name: "Valentina R.",
-    city: "Medellín",
+    city: "Novia · Bogotá",
     rating: 5,
   },
   {
     quote:
-      "Usé la base en el Carnaval de Barranquilla. Cuatro días. Cero retoques. No puedo creerlo.",
-    name: "Daniela M.",
-    city: "Barranquilla",
+      "Contraté a Nativa para la quinceañera de mi hija. Quedó hermosa sin verse 'grande'. Alejandra entendió exactamente el balance que queríamos: juvenil pero especial.",
+    name: "Carolina M.",
+    city: "Mamá de quinceañera · Medellín",
     rating: 5,
   },
   {
     quote:
-      "Es la primera marca colombiana que me hace sentir que el maquillaje fue hecho pensando en MÍ, no adaptado.",
-    name: "Camila S.",
-    city: "Bogotá",
+      "Hicimos una Nativa Party para mi despedida de soltera. Nos reímos, aprendimos, y salimos todas maquilladas como profesionales. Fue el mejor plan que pudimos elegir.",
+    name: "Daniela S.",
+    city: "Novia · Bogotá",
     rating: 5,
   },
   {
     quote:
-      "Ingredientes nativos, calidad de MAC, precio justo. Esto es lo que necesitábamos en Colombia.",
-    name: "Isabella T.",
-    city: "Cali",
+      "Trabajo con Alejandra en producciones editoriales. Su técnica en piel latina es impecable — entiende los subtonos, la luz, y cómo se ve el maquillaje en cámara. Profesional de verdad.",
+    name: "Camila T.",
+    city: "Fotógrafa de moda · Bogotá",
     rating: 5,
   },
 ];
@@ -83,14 +83,14 @@ export default function Testimonials() {
             visible ? "animate-fade-in-up" : "opacity-0"
           }`}
         >
-          Mujeres Nativas, belleza real
+          Lo que dicen nuestras clientas
         </h2>
         <p
           className={`mb-16 text-center text-sm text-nativa-piedra ${
             visible ? "animate-fade-in-up animation-delay-150" : "opacity-0"
           }`}
         >
-          Testimonios reales de mujeres que encontraron su match perfecto
+          Cada testimonio es una historia de confianza
         </p>
 
         {/* Desktop: show 3 cards */}
