@@ -3,6 +3,9 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { COMMERCE_ENABLED } from "@/lib/products";
+import { CartProvider } from "@/context/CartContext";
+import CartDrawer from "@/components/cart/CartDrawer";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -76,7 +79,12 @@ export default async function LocaleLayout({
         >
           {t("skipToContent")}
         </a>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <CartProvider>
+            {children}
+            {COMMERCE_ENABLED && <CartDrawer />}
+          </CartProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

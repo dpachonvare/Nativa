@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
+import { COMMERCE_ENABLED } from "@/lib/products";
 import Logo from "./Logo";
 import LocaleSwitcher from "./LocaleSwitcher";
+import CartButton from "./cart/CartButton";
 
 const LINKS = [
   { href: "/rocio", key: "rocio" },
@@ -45,12 +47,14 @@ export default function Navbar() {
             })}
           </ul>
           <LocaleSwitcher />
+          {COMMERCE_ENABLED && <CartButton />}
         </div>
 
-        {/* Mobile toggle */}
-        <button
-          type="button"
-          className="md:hidden"
+        {/* Mobile: carrito + toggle */}
+        <div className="flex items-center gap-4 md:hidden">
+          {COMMERCE_ENABLED && <CartButton />}
+          <button
+            type="button"
           aria-label={open ? t("closeMenu") : t("openMenu")}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -75,7 +79,8 @@ export default function Navbar() {
               </>
             )}
           </svg>
-        </button>
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}

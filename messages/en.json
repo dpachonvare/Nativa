@@ -232,6 +232,22 @@
     "consent": "By joining you agree to hear from NATIVA. No noise — only what matters.",
     "promise": "The first 100 get early access."
   },
+  "cart": {
+    "title": "Your ritual",
+    "addToCart": "Add to cart",
+    "openCart": "Open cart ({count})",
+    "close": "Close",
+    "empty": "Your cart is empty.",
+    "continueShopping": "Keep exploring",
+    "remove": "Remove",
+    "increase": "Increase",
+    "decrease": "Decrease",
+    "subtotal": "Subtotal",
+    "taxesNote": "Taxes and shipping are calculated at checkout.",
+    "checkout": "Checkout",
+    "processing": "Processing…",
+    "checkoutError": "We couldn't start checkout. Please try again."
+  },
   "footer": {
     "tagline": "Rituals from our land.",
     "modernRituals": "Modern Rituals for Everyday Beauty",

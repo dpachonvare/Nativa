@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { COMMERCE_ENABLED, type Ritual } from "@/lib/products";
+import AddToCartButton from "./cart/AddToCartButton";
 
 /**
  * Slot de acción "cart-ready" (brief §9).
@@ -23,18 +24,9 @@ export default function ProductActionSlot({
   const base =
     "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium transition-colors";
 
-  if (COMMERCE_ENABLED && ritual.status === "available") {
-    // Camino de checkout preferido: Stripe Payment Link (sin carrito a medida).
-    // Alternativas: Snipcart o Shopify Buy Button. Cablear aquí al activar stock.
-    return (
-      <button
-        type="button"
-        className={`${base} bg-nativa-cacao text-nativa-marfil hover:bg-nativa-terracota ${className ?? ""}`}
-      >
-        {/* Reemplazar por la acción real de compra. */}
-        {t("joinList")}
-      </button>
-    );
+  // Comercio activo + producto disponible → "Añadir al carrito" (Stripe Checkout).
+  if (COMMERCE_ENABLED && ritual.status === "available" && ritual.price != null) {
+    return <AddToCartButton ritual={ritual} className={className} />;
   }
 
   const label =
