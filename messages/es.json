@@ -1,0 +1,269 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "rocio": "ROCÍO",
+    "rituales": "Rituales",
+    "manifiesto": "Manifiesto",
+    "vip": "Lista VIP",
+    "skipToContent": "Saltar al contenido",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "common": {
+    "available": "Disponible",
+    "comingSoon": "Próximamente",
+    "notifyMe": "Avísame cuando llegue",
+    "joinList": "Únete a la lista",
+    "learnMore": "Conoce ROCÍO",
+    "exploreRituals": "Ver los rituales",
+    "selectLanguage": "Seleccionar idioma",
+    "languageEs": "Español",
+    "languageEn": "English"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Rituales de nuestra tierra",
+      "title": "Rituales de nuestra tierra, para una piel luminosa.",
+      "subtitle": "Ciencia coreana, alma latina. ROCÍO devuelve luz y empareja el tono — para que tu piel se vea más fresca, descansada y tuya.",
+      "ctaPrimary": "Únete a la lista VIP",
+      "ctaSecondary": "Conoce ROCÍO"
+    },
+    "climate": {
+      "eyebrow": "Te entendemos",
+      "title": "Sabemos lo que el sol y el calor le hacen a tu piel.",
+      "body": "Las manchas, el tono que se apaga, la piel que se oscurece después del verano. Nosotras venimos de ahí — y formulamos para eso."
+    },
+    "promise": {
+      "eyebrow": "La promesa",
+      "title": "Con uso constante:",
+      "items": [
+        "Piel visiblemente más luminosa.",
+        "Tono más uniforme.",
+        "Una textura que se siente más suave."
+      ]
+    },
+    "rocio": {
+      "eyebrow": "El héroe",
+      "name": "ROCÍO",
+      "type": "Hydrating Milky Toner · 150 ml",
+      "tagline": "El primer paso del ritual NATIVA.",
+      "description": "Un tónico lechoso, no aguado, inspirado en el ritual del agua de arroz fermentado. Hidrata, calma, ilumina y empareja el tono. Mañana y noche.",
+      "cta": "Descubre ROCÍO"
+    },
+    "science": {
+      "eyebrow": "Ciencia con alma",
+      "title": "Ciencia coreana en la fórmula, alma latina en la experiencia.",
+      "body": "No es una marca étnica; es premium con raíz. El ritual heredado latinoamericano —sensorial, emocional, de memoria— se encuentra con la precisión cosmética coreana.",
+      "items": [
+        {
+          "title": "Ritual heredado",
+          "body": "Sensorial y emocional. La memoria de las mujeres que nos formaron."
+        },
+        {
+          "title": "Precisión coreana",
+          "body": "Formulación seria: niacinamida y arroz fermentado en el centro."
+        },
+        {
+          "title": "Resultado visible",
+          "body": "Luminosidad y tono más uniforme, en lenguaje honesto de apariencia."
+        }
+      ]
+    },
+    "rituals": {
+      "eyebrow": "NATIVA Originals",
+      "title": "Los cinco rituales",
+      "subtitle": "Uno disponible. Cuatro en camino. Nombres en español, porque la raíz no se traduce."
+    },
+    "spf": {
+      "eyebrow": "Con honestidad",
+      "title": "Te lo decimos claro, como la amiga que sabe de skincare.",
+      "body": "La luminosidad se protege de día con SPF. ROCÍO prepara y repara; el protector solar cuida. ROCÍO no es protector solar."
+    },
+    "vip": {
+      "eyebrow": "Lista VIP",
+      "title": "Las primeras en saber, las primeras en comprar.",
+      "subtitle": "Estamos en pre-lanzamiento. Déjanos tu correo y serás de las primeras 100 en recibir ROCÍO."
+    }
+  },
+  "rituals": {
+    "page": {
+      "eyebrow": "NATIVA Originals",
+      "title": "Los cinco rituales",
+      "subtitle": "Un sistema completo, pensado como un ritual diario. Hoy presentamos a ROCÍO; los demás llegan pronto."
+    },
+    "items": {
+      "rocio": {
+        "type": "Hydrating Milky Toner",
+        "tagline": "Devuelve luz y empareja el tono.",
+        "shortDescription": "Tónico lechoso de arroz fermentado. El primer paso del ritual."
+      },
+      "raiz": {
+        "type": "Cleansing Oil",
+        "tagline": "El comienzo: limpia sin despojar.",
+        "shortDescription": "Aceite limpiador que disuelve el día y respeta la barrera de la piel."
+      },
+      "bruma": {
+        "type": "Hydrating Face Mist",
+        "tagline": "Frescura que revive el tono.",
+        "shortDescription": "Bruma hidratante para refrescar y fijar la luminosidad a cualquier hora."
+      },
+      "aura": {
+        "type": "Nourishing Lip Treatment",
+        "tagline": "El gesto final, en los labios.",
+        "shortDescription": "Tratamiento labial nutritivo que sella el ritual con suavidad."
+      },
+      "velo": {
+        "type": "Exfoliating Toner Pads",
+        "tagline": "Renueva la textura, con calma.",
+        "shortDescription": "Discos exfoliantes que pulen el tono sin agredir la piel."
+      }
+    }
+  },
+  "rocio": {
+    "eyebrow": "El héroe del ritual",
+    "name": "ROCÍO",
+    "type": "Hydrating Milky Toner",
+    "format": "150 ml · 5.07 fl oz",
+    "tagline": "Ciencia coreana, alma latina. Devuelve luz y empareja el tono.",
+    "usage": "Uso diario · AM & PM",
+    "whatItIs": {
+      "title": "Qué es",
+      "body": "Un tónico lechoso —no aguado— inspirado en el ritual del agua de arroz fermentado. El primer paso del ritual NATIVA: hidrata, calma, ilumina y empareja el tono. Una textura de seda líquida que absorbe sin residuo en segundos."
+    },
+    "whatItIsNot": {
+      "title": "Qué no es",
+      "items": [
+        "Una esencia aguada sin textura.",
+        "Un tónico ácido o exfoliante.",
+        "Una copia de ANUA Heartleaf.",
+        "Un producto con fragancia fuerte.",
+        "Skincare clínico o terapéutico."
+      ]
+    },
+    "sensorial": {
+      "title": "La experiencia",
+      "body": "Textura de seda líquida que absorbe sin residuo en 15–30 segundos. Olor suave, limpio, floral-neutro: ni perfumado ni clínico. Frescura seguida de calma. La sensación de que la piel recibió algo bueno."
+    },
+    "ingredients": {
+      "title": "Ingredientes que cuidan",
+      "subtitle": "Una fórmula seria, en lenguaje sensorial.",
+      "items": [
+        { "name": "Agua de arroz fermentado", "note": "El ingrediente estrella. Luz y tono." },
+        { "name": "Niacinamida", "note": "Empareja el tono y aporta luminosidad." },
+        { "name": "Pantenol", "note": "Calma y conforta la piel." },
+        { "name": "Beta-glucano", "note": "Hidratación profunda y reparadora." },
+        { "name": "Ácido hialurónico (LMW)", "note": "Hidrata desde dentro." },
+        { "name": "Centella asiática", "note": "Apacigua y reconforta." },
+        { "name": "Ceramidas", "note": "Refuerzan la barrera de la piel." }
+      ],
+      "ectoinNote": "El arte del producto también menciona Ectoína — pendiente de confirmación antes de publicar."
+    },
+    "howToUse": {
+      "title": "Modo de uso",
+      "steps": [
+        "Aplica sobre piel limpia, con las manos (palming) o con un algodón.",
+        "Presiona suavemente hasta absorber.",
+        "Continúa tu ritual. Mañana y noche."
+      ]
+    },
+    "seals": {
+      "title": "Nuestros principios",
+      "items": [
+        "Cruelty Free",
+        "Vegano",
+        "Sin parabenos ni sulfatos",
+        "Envase reciclable"
+      ],
+      "disclaimer": "Principios aspiracionales y en proceso de certificación; no afirmamos certificaciones que aún no existan."
+    },
+    "promise": {
+      "title": "La promesa",
+      "body": "Con uso constante: piel visiblemente más luminosa, tono más uniforme y una textura que se siente más suave."
+    },
+    "spf": {
+      "title": "Con honestidad",
+      "body": "La luminosidad se protege de día con SPF. ROCÍO prepara y repara; el protector solar cuida. ROCÍO no es protector solar."
+    },
+    "action": {
+      "preLaunchTitle": "En pre-lanzamiento",
+      "preLaunchBody": "Aún no abrimos checkout. Únete a la lista VIP y serás de las primeras en recibirlo.",
+      "cta": "Únete a la lista"
+    }
+  },
+  "manifesto": {
+    "eyebrow": "Sobre NATIVA",
+    "title": "No encontré la marca que buscaba. Así que la formulamos.",
+    "intro": "NATIVA nace de una verdad simple: las mujeres latinas merecíamos un skincare premium que entendiera nuestra piel, nuestro clima y nuestra historia — sin pedir disculpas por ser de aquí.",
+    "bridge": {
+      "title": "El puente",
+      "body": "Ritual heredado latinoamericano por precisión cosmética coreana. Lo sensorial y emocional de nuestras abuelas, con la seriedad de una formulación de hoy. Ciencia con alma."
+    },
+    "values": [
+      {
+        "title": "Íntimas",
+        "body": "Hablamos como una amiga que sabe más de skincare que tú. Cercanas, nunca condescendientes."
+      },
+      {
+        "title": "Sensoriales",
+        "body": "Describimos textura, olor y sensación antes que ingredientes. La piel se siente, no solo se trata."
+      },
+      {
+        "title": "Seguras de nuestra raíz",
+        "body": "No pedimos disculpas por ser latinas. Premium con raíz, no una marca étnica."
+      }
+    ],
+    "woman": {
+      "title": "La mujer NATIVA",
+      "body": "Vive entre culturas o con sensibilidad global. Cuida su piel con criterio y le importa la historia detrás del producto. La Bicultural, la Conscious Latina, la Open Beauty."
+    },
+    "closing": "No queremos vender miles. Queremos las primeras 100 clientas que quieran volver."
+  },
+  "vip": {
+    "eyebrow": "Lista VIP",
+    "title": "Únete a la lista VIP",
+    "subtitle": "Las primeras en saber, las primeras en comprar. Déjanos tu correo y te avisamos cuando ROCÍO esté disponible.",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu correo",
+    "submit": "Quiero unirme",
+    "submitting": "Enviando…",
+    "success": "¡Bienvenida al ritual! Serás de las primeras en saber.",
+    "error": "Algo salió mal. Inténtalo de nuevo en un momento.",
+    "invalidEmail": "Escribe un correo válido, por favor.",
+    "consent": "Al unirte aceptas recibir noticias de NATIVA. Nada de ruido — solo lo importante.",
+    "promise": "Las primeras 100 reciben acceso anticipado."
+  },
+  "footer": {
+    "tagline": "Rituales de nuestra tierra.",
+    "modernRituals": "Modern Rituals for Everyday Beauty",
+    "ritualsCol": "Rituales",
+    "brandCol": "La marca",
+    "vipCol": "Únete",
+    "vipBlurb": "Las primeras en saber, las primeras en comprar.",
+    "social": "Síguenos",
+    "instagram": "@nativa.skincare",
+    "rights": "Todos los derechos reservados.",
+    "claimsNote": "NATIVA promete un cambio visible en la apariencia de la piel. ROCÍO no es protector solar ni reemplaza tratamiento médico."
+  },
+  "metadata": {
+    "home": {
+      "title": "NATIVA | Skincare premium con raíz latina — ROCÍO",
+      "description": "Rituales de nuestra tierra, para una piel luminosa. Ciencia coreana, alma latina. Descubre ROCÍO, el tónico lechoso de NATIVA. Únete a la lista VIP."
+    },
+    "rocio": {
+      "title": "ROCÍO · Hydrating Milky Toner | NATIVA",
+      "description": "ROCÍO, el tónico lechoso de arroz fermentado de NATIVA. Devuelve luz y empareja el tono. 150 ml. Únete a la lista VIP del pre-lanzamiento."
+    },
+    "rituals": {
+      "title": "Los cinco rituales · NATIVA Originals",
+      "description": "ROCÍO, RAÍZ, BRUMA, AURA y VELO. El sistema de rituales de NATIVA. Hoy disponible ROCÍO; los demás, próximamente."
+    },
+    "manifesto": {
+      "title": "Manifiesto · Sobre NATIVA",
+      "description": "No encontré la marca que buscaba, así que la formulamos. La historia de NATIVA: ciencia coreana, alma latina, premium con raíz."
+    },
+    "vip": {
+      "title": "Lista VIP · Únete a NATIVA",
+      "description": "Las primeras en saber, las primeras en comprar. Únete a la lista VIP de NATIVA y recibe acceso anticipado a ROCÍO."
+    }
+  }
+}
