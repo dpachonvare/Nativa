@@ -1,27 +1,27 @@
 @import "tailwindcss";
 
+/* ============================================================
+   NATIVA — Tokens de marca (brief §3)
+   Paleta oficial. Cacao = texto, Terracota = acento,
+   Arena = neutro medio, Lino = fondo suave, Marfil = fondo base.
+   ============================================================ */
 @theme {
-  /* Core — Tonos tierra sofisticados */
-  --color-nativa-terra: #8B6914;
-  --color-nativa-cacao: #3D2B1F;
-  --color-nativa-arena: #F5EDE3;
-  --color-nativa-lino: #FBF8F4;
-  --color-nativa-canela: #C4956A;
+  --color-nativa-cacao: #2c1a0e; /* texto principal */
+  --color-nativa-terracota: #b85c38; /* acento */
+  --color-nativa-arena: #d9c4a8; /* neutro medio */
+  --color-nativa-lino: #ede3d5; /* fondo suave */
+  --color-nativa-marfil: #f5efe6; /* fondo base */
 
-  /* Acentos */
-  --color-nativa-terracota: #C2593A;
-  --color-nativa-selva: #2D5A3D;
-  --color-nativa-oro: #D4AF78;
+  /* Derivados para jerarquía y estados (dentro de la familia tierra) */
+  --color-nativa-humo: #6b5848; /* texto secundario */
+  --color-nativa-terracota-oscuro: #97462a; /* hover de acento */
+}
 
-  /* Neutrales */
-  --color-nativa-piedra: #9A8E82;
-  --color-nativa-humo: #6B5E52;
-  --color-nativa-noche: #1A150D;
-
-  /* Fonts */
-  --font-display: "Instrument Serif", serif;
-  --font-body: "DM Sans", sans-serif;
-  --font-accent: "Cormorant Garamond", serif;
+@theme {
+  /* Tipografía (brief §3): Cormorant para títulos, Inter para cuerpo/UI.
+     Cargadas vía <link> con display:swap en el layout. */
+  --font-display: "Cormorant", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
 }
 
 /* ---------- Base ---------- */
@@ -34,12 +34,12 @@ html {
 body {
   font-family: var(--font-body);
   color: var(--color-nativa-cacao);
-  background-color: var(--color-nativa-lino);
+  background-color: var(--color-nativa-marfil);
 }
 
 ::selection {
-  background-color: var(--color-nativa-canela);
-  color: white;
+  background-color: var(--color-nativa-terracota);
+  color: var(--color-nativa-marfil);
 }
 
 /* ---------- Noise overlay ---------- */
@@ -153,9 +153,9 @@ body {
   animation: testimonial-fade-in 0.5s ease-out forwards;
 }
 
-/* ---------- Focus styles ---------- */
+/* ---------- Focus styles (accesibilidad AA) ---------- */
 *:focus-visible {
-  outline: 2px solid var(--color-nativa-terra);
+  outline: 2px solid var(--color-nativa-terracota);
   outline-offset: 2px;
 }
 
@@ -167,9 +167,21 @@ body {
   background: var(--color-nativa-lino);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-nativa-canela);
+  background: var(--color-nativa-arena);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-nativa-humo);
+}
+
+/* ---------- Respeto a prefers-reduced-motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

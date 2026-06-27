@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nativamakeup.co/sitemap.xml
+Sitemap: https://nativa.skincare/sitemap.xml
