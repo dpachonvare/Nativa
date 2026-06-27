@@ -45,7 +45,7 @@
     "rocio": {
       "eyebrow": "The hero",
       "name": "ROCÍO",
-      "type": "Hydrating Milky Toner · 150 ml",
+      "type": "Hydrating Milk Tonic · 150 ml",
       "tagline": "The first step of the NATIVA ritual.",
       "description": "A milky toner — never watery — inspired by the ritual of fermented rice water. It hydrates, soothes, brightens and evens tone. Morning and night.",
       "cta": "Discover ROCÍO"
@@ -93,7 +93,7 @@
     },
     "items": {
       "rocio": {
-        "type": "Hydrating Milky Toner",
+        "type": "Hydrating Milk Tonic",
         "tagline": "Restores radiance and evens tone.",
         "shortDescription": "Fermented-rice milky toner. The first step of the ritual."
       },
@@ -122,7 +122,7 @@
   "rocio": {
     "eyebrow": "The hero of the ritual",
     "name": "ROCÍO",
-    "type": "Hydrating Milky Toner",
+    "type": "Hydrating Milk Tonic",
     "format": "150 ml · 5.07 fl oz",
     "tagline": "Korean science, Latin soul. Restores radiance and evens tone.",
     "usage": "Daily use · AM & PM",
@@ -154,9 +154,9 @@
         { "name": "Beta-glucan", "note": "Deep, restoring hydration." },
         { "name": "Hyaluronic acid (LMW)", "note": "Hydrates from within." },
         { "name": "Centella asiatica", "note": "Calms and reassures." },
-        { "name": "Ceramides", "note": "Reinforce the skin barrier." }
-      ],
-      "ectoinNote": "The product art also mentions Ectoin — pending confirmation before publishing."
+        { "name": "Ceramides", "note": "Reinforce the skin barrier." },
+        { "name": "Ectoin", "note": "Protects against environmental stress and daily damage." }
+      ]
     },
     "howToUse": {
       "title": "How to use",
@@ -250,7 +250,7 @@
       "description": "Rituals from our land, for luminous skin. Korean science, Latin soul. Discover ROCÍO, NATIVA's milky toner. Join the VIP list."
     },
     "rocio": {
-      "title": "ROCÍO · Hydrating Milky Toner | NATIVA",
+      "title": "ROCÍO · Hydrating Milk Tonic | NATIVA",
       "description": "ROCÍO, NATIVA's fermented-rice milky toner. Restores radiance and evens tone. 150 ml. Join the pre-launch VIP list."
     },
     "rituals": {

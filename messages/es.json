@@ -45,7 +45,7 @@
     "rocio": {
       "eyebrow": "El héroe",
       "name": "ROCÍO",
-      "type": "Hydrating Milky Toner · 150 ml",
+      "type": "Hydrating Milk Tonic · 150 ml",
       "tagline": "El primer paso del ritual NATIVA.",
       "description": "Un tónico lechoso, no aguado, inspirado en el ritual del agua de arroz fermentado. Hidrata, calma, ilumina y empareja el tono. Mañana y noche.",
       "cta": "Descubre ROCÍO"
@@ -93,7 +93,7 @@
     },
     "items": {
       "rocio": {
-        "type": "Hydrating Milky Toner",
+        "type": "Hydrating Milk Tonic",
         "tagline": "Devuelve luz y empareja el tono.",
         "shortDescription": "Tónico lechoso de arroz fermentado. El primer paso del ritual."
       },
@@ -122,7 +122,7 @@
   "rocio": {
     "eyebrow": "El héroe del ritual",
     "name": "ROCÍO",
-    "type": "Hydrating Milky Toner",
+    "type": "Hydrating Milk Tonic",
     "format": "150 ml · 5.07 fl oz",
     "tagline": "Ciencia coreana, alma latina. Devuelve luz y empareja el tono.",
     "usage": "Uso diario · AM & PM",
@@ -154,9 +154,9 @@
         { "name": "Beta-glucano", "note": "Hidratación profunda y reparadora." },
         { "name": "Ácido hialurónico (LMW)", "note": "Hidrata desde dentro." },
         { "name": "Centella asiática", "note": "Apacigua y reconforta." },
-        { "name": "Ceramidas", "note": "Refuerzan la barrera de la piel." }
-      ],
-      "ectoinNote": "El arte del producto también menciona Ectoína — pendiente de confirmación antes de publicar."
+        { "name": "Ceramidas", "note": "Refuerzan la barrera de la piel." },
+        { "name": "Ectoína", "note": "Protege contra el estrés ambiental y el daño diario." }
+      ]
     },
     "howToUse": {
       "title": "Modo de uso",
@@ -250,7 +250,7 @@
       "description": "Rituales de nuestra tierra, para una piel luminosa. Ciencia coreana, alma latina. Descubre ROCÍO, el tónico lechoso de NATIVA. Únete a la lista VIP."
     },
     "rocio": {
-      "title": "ROCÍO · Hydrating Milky Toner | NATIVA",
+      "title": "ROCÍO · Hydrating Milk Tonic | NATIVA",
       "description": "ROCÍO, el tónico lechoso de arroz fermentado de NATIVA. Devuelve luz y empareja el tono. 150 ml. Únete a la lista VIP del pre-lanzamiento."
     },
     "rituals": {

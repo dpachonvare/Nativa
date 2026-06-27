@@ -139,9 +139,6 @@ function RocioContent() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-center text-xs italic text-nativa-humo">
-            {t("ingredients.ectoinNote")}
-          </p>
         </div>
       </section>
 
