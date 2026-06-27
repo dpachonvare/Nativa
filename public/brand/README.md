@@ -4,14 +4,18 @@ Coloca aquí los archivos de marca. El sitio los usará automáticamente cuando
 existan; mientras tanto, la navegación y el footer usan un logo SVG tipográfico
 de respaldo (`components/Logo.tsx`) para que el deploy nunca se rompa.
 
-Archivos esperados (brief §3):
+## Archivos en uso
 
-| Archivo | Uso |
+| Archivo | Uso en el sitio |
 |---|---|
-| `Logo.png` | Sol + wordmark NATIVA + "Rituales de nuestra tierra". Logo principal. |
-| `Logo_Complementario.png` | Ilustración de la mujer + orquídea. Para hero/secciones de marca. |
-| `Ritual_Rocio.jpeg` | Pieza de producto ROCÍO. Hero del producto y secciones editoriales. |
-| `Sample_Box.png` | Packaging / mockup. Secciones editoriales. |
+| `NATIVA_Logo_Principal.png` | Logo principal (sol + wordmark + "Rituales de nuestra tierra"). Reserva de marca. |
+| `NATIVA_Logo_Complementario.png` | Ilustración mujer + orquídea. **Hero de la Home.** |
+| `NATIVA_Rocio_Ritual.jpeg` | Pieza editorial completa de ROCÍO (póster original). |
+| `rocio-bottle.jpg` | **Derivado**: recorte del frasco desde el póster. Se usa en el héroe de ROCÍO, la sección héroe de la Home y la grilla de rituales. |
 
-> Formatos recomendados para web: exporta también versiones `.webp` u optimiza
-> los PNG/JPEG. Usa `next/image` para servirlos (ya configurado en los componentes).
+> El wordmark de la barra de navegación y el footer usa un logo SVG vectorial
+> (`components/Logo.tsx`) por nitidez a tamaño pequeño. Si prefieres el logo
+> rasterizado ahí, se puede cambiar.
+>
+> `rocio-bottle.jpg` se generó recortando `NATIVA_Rocio_Ritual.jpeg`. Si subes
+> una foto del frasco con fondo limpio, reemplázala con ese nombre.

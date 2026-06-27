@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import Navbar from "@/components/Navbar";
@@ -31,15 +32,15 @@ function RocioContent() {
       {/* Encabezado / héroe del producto */}
       <section className="bg-nativa-cacao text-nativa-marfil">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:py-28 lg:grid-cols-2">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-md rounded-[2.5rem] bg-gradient-to-br from-nativa-arena/30 via-nativa-lino/10 to-nativa-terracota/40">
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-              <span className="font-display text-7xl tracking-[0.2em] text-nativa-marfil/90">
-                {t("name")}
-              </span>
-              <span className="mt-3 text-xs uppercase tracking-[0.3em] text-nativa-arena">
-                {t("type")}
-              </span>
-            </div>
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-[2.5rem] shadow-lg">
+            <Image
+              src="/brand/rocio-bottle.jpg"
+              alt="NATIVA ROCÍO — Hydrating Milk Tonic, 150 ml"
+              fill
+              priority
+              sizes="(max-width: 1024px) 90vw, 40vw"
+              className="object-cover"
+            />
           </div>
           <div>
             <p className="mb-4 text-xs uppercase tracking-[0.35em] text-nativa-arena">

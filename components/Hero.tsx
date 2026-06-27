@@ -1,11 +1,11 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 /**
  * Hero de la Home — enraizado + promesa visible.
- * Usa composición tipográfica/decorativa (sin depender de PNG ausentes).
- * Cuando exista /public/brand/Logo_Complementario.png, puede insertarse aquí
- * con next/image en la columna derecha.
+ * Columna derecha: logo complementario (mujer + orquídea) sobre tarjeta
+ * con el mismo crema del arte para que no se vea costura.
  */
 export default function Hero() {
   const t = useTranslations("home.hero");
@@ -40,17 +40,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Pieza visual de marca (placeholder editorial) */}
-        <div className="hero-animate hero-delay-3 relative mx-auto aspect-[4/5] w-full max-w-md">
-          <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-nativa-lino via-nativa-arena/60 to-nativa-terracota/30" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-            <span className="font-display text-6xl tracking-[0.2em] text-nativa-cacao/80">
-              ROCÍO
-            </span>
-            <span className="mt-3 text-xs uppercase tracking-[0.3em] text-nativa-humo">
-              Hydrating Milky Toner
-            </span>
-          </div>
+        {/* Pieza visual de marca — logo complementario */}
+        <div className="hero-animate hero-delay-3 relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-[2.5rem] bg-[#f5e6d7] shadow-sm">
+          <Image
+            src="/brand/NATIVA_Logo_Complementario.png"
+            alt="NATIVA — Rituales de nuestra tierra"
+            fill
+            priority
+            sizes="(max-width: 1024px) 90vw, 40vw"
+            className="object-contain p-2"
+          />
         </div>
       </div>
     </section>

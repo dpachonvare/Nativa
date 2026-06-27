@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import RitualsGrid from "./RitualsGrid";
@@ -63,12 +64,14 @@ export function RocioHero() {
   return (
     <section className="bg-nativa-cacao text-nativa-marfil">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:py-28 lg:grid-cols-2">
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm rounded-[2.5rem] bg-gradient-to-br from-nativa-arena/30 via-nativa-lino/10 to-nativa-terracota/40">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="font-display text-6xl tracking-[0.2em] text-nativa-marfil/90">
-              {t("name")}
-            </span>
-          </div>
+        <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-[2.5rem] shadow-lg">
+          <Image
+            src="/brand/rocio-bottle.jpg"
+            alt="NATIVA ROCÍO — Hydrating Milk Tonic, 150 ml"
+            fill
+            sizes="(max-width: 1024px) 90vw, 40vw"
+            className="object-cover"
+          />
         </div>
         <div>
           <p className="mb-4 text-xs uppercase tracking-[0.35em] text-nativa-arena">

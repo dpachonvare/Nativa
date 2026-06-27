@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { RITUALS } from "@/lib/products";
@@ -17,11 +18,21 @@ export default function RitualsGrid() {
         const available = ritual.status === "available";
         const card = (
           <article className="group flex h-full flex-col rounded-3xl border border-nativa-arena/60 bg-nativa-marfil p-7 transition-colors hover:border-nativa-terracota/50">
-            {/* Marco de imagen (placeholder editorial hasta tener fotografía) */}
-            <div className="mb-6 flex aspect-[4/5] items-center justify-center rounded-2xl bg-nativa-lino">
-              <span className="font-display text-3xl tracking-[0.2em] text-nativa-arena">
-                {ritual.name}
-              </span>
+            {/* Imagen del frasco para ROCÍO; marco editorial para los próximos */}
+            <div className="relative mb-6 flex aspect-[4/5] items-center justify-center overflow-hidden rounded-2xl bg-nativa-lino">
+              {ritual.slug === "rocio" ? (
+                <Image
+                  src="/brand/rocio-bottle.jpg"
+                  alt={`NATIVA ${ritual.name}`}
+                  fill
+                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 30vw"
+                  className="object-cover"
+                />
+              ) : (
+                <span className="font-display text-3xl tracking-[0.2em] text-nativa-arena">
+                  {ritual.name}
+                </span>
+              )}
             </div>
 
             <div className="mb-2 flex items-center justify-between gap-2">
